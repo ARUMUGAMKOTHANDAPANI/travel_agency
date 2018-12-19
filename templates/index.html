@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TourNearby Travel Agency </title>
+
+    <link href="{{ url_for('static', filename = 'assets/css/bootstrap.css') }}" rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename = 'assets/css/font-awesome.min.css') }}" rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename = 'assets/css/font-awesome-animation.css') }}" rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename = 'assets/css/prettyPhoto.css') }}" rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename = 'assets/css/style.css') }}" rel="stylesheet" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <!-- NAV SECTION -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ url_for('login') }}">TourNearby</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{ url_for('index') }}">HOME</a></li>
+                    <li><a href="{{ url_for('booking') }}">BOOKING</a></li>
+                    <li><a href="{{ url_for('packages') }}">PACKAGE</a></li>
+                    <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--END NAV SECTION -->
+
+    <!--HOME SECTION-->
+    <div id="home-sec">
+
+
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+
+                    <div class="travel">TourNearby</div>
+                    <div class=my_logo>
+                        <div class="head-main">It Leaves You Speechless
+                            <div class="head-main">THEN TURNS YOU INTO A STORYTELLER</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--END HOME SECTION-->
+
+
+
+
+
+    <!--FOOTER SECTION -->
+    <div id="footer">
+        www.Tournearby.com
+
+    </div>
+    <!-- END FOOTER SECTION -->
+
+
+  
+    <!-- BOOTSTRAP CORE SCRIPT   -->
+    <script src="{{ url_for('static', filename = 'assets/plugins/bootstrap.min.js') }}"></script>
+    
+    
+
+</body>
+
+</html>

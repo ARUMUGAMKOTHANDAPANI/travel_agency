@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TourNearby Travel Agency </title>
+
+    <link href="{{ url_for('static', filename = 'assets/css/bootstrap.css') }}" rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename = 'assets/css/font-awesome.min.css') }}" rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename = 'assets/css/font-awesome-animation.css') }}" rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename = 'assets/css/prettyPhoto.css') }}" rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename = 'assets/css/style.css') }}" rel="stylesheet" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel='stylesheet' type='text/css'>
+
+</head>
+
+
+<body>
+     <div class="navbar navbar-inverse navbar-fixed-top">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ url_for('login') }}">TourNearby</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{ url_for('index') }}">HOME</a></li>
+                    <li><a href="{{ url_for('booking') }}">BOOKING</a></li>
+                    <li><a href="{{ url_for('packages') }}">PACKAGE</a></li>
+                    <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--END NAV SECTION -->
+
+
+
+    <!--CONTACT SECTION-->
+
+    <section>
+        <div class="container">
+
+            <div class="row g-pad-bottom">
+                <div class="col-md-6 ">
+                    <h2>TourNearby Travel Agency</h2>
+
+                    <p>
+                        <strong> Address: </strong> &nbsp;Chennai,Tamilnadu, Pin-600021.
+                        <br />
+                        <strong> Email Address: </strong> &nbsp;Tournearby@gmail.com
+                        <br />
+                        <strong> Phone Number: </strong> &nbsp;+91-9080453490
+                    </p>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 ">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" required="required" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" required="required" placeholder="Email address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 ">
+                                <div class="form-group">
+                                    <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-success">Submit Request</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--END CONTACT SECTION-->
+
+
+
+
+
+    <!--FOOTER SECTION -->
+    <div id="footer">
+        www.Tournearby.com
+
+    </div>
+    <!-- END FOOTER SECTION -->
+
+   
+    <!-- BOOTSTRAP CORE SCRIPT   -->
+    <script src="{{ url_for('static', filename = 'assets/plugins/bootstrap.min.js') }}"></script>
+   
+
+</body>
+
+</html>

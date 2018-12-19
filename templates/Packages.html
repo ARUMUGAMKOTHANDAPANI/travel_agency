@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TourNearby Travel Agency </title>
+
+    <link href="{{ url_for('static', filename = 'assets/css/bootstrap.css') }}" rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename = 'assets/css/font-awesome.min.css') }}" rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename = 'assets/css/font-awesome-animation.css') }}" rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename = 'assets/css/prettyPhoto.css') }}" rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename = 'assets/css/style.css') }}" rel="stylesheet" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel='stylesheet' type='text/css'>
+
+</head>
+
+
+<body>
+    <!-- NAV SECTION -->
+      <div class="navbar navbar-inverse navbar-fixed-top">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ url_for('login') }}">TourNearby</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{ url_for('index') }}">HOME</a></li>
+                    <li><a href="{{ url_for('booking') }}">BOOKING</a></li>
+                    <li><a href="{{ url_for('packages') }}">PACKAGE</a></li>
+                    <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--END NAV SECTION -->
+
+    <!-- PORTFOLIO SECTION-->
+    <section id="port-sec">
+        <div class="container">
+            <div class="row g-pad-bottom">
+                <div class="text-center g-pad-bottom">
+                    <div class="col-md-12 col-sm-12 alert-info">
+                        <h4>&nbsp;Tours & Packages</h4>
+                        <p>
+                            People don't take trips, trips take people
+                        </p>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="row go-marg">
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+
+                        <div class="panel-body">
+                            <h4 class="adjst">Kerala Tour Packages</h4>
+                            <p>
+                                <span>Spices of kerala--------------------------------------- 8D/7N</span>
+                                <span>Exotic Kerala Tour----------------------------------- 8D/9N</span>
+                                <span>Backwaters and Beaches------------------------- 9D/8N</span>
+                            </p>
+                            <span class="label label-danger">Cost:Rs.10,000</span>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+
+                        <div class="panel-body">
+                            <h4 class="adjst">Tamilnadu Tour Packages </h4>
+                            <p>
+                                <span>Temple Tours------------------------------------------ 8D/7N</span>
+                                <span>Magestic Tamilnadu Tour-------------------------- 8D/7N</span>
+                                <span>Best of Hill Stations---------------------------------- 8D/7N</span>
+                            </p>
+                            <span class="label label-danger">Cost:Rs.20,000</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+
+                        <div class="panel-body">
+                            <h4 class="adjst">South India Tour Packages </h4>
+                            <p>
+                                <span>Munnar Hills Tour Package------------------------4D/3N</span>
+                                <span>Ooty Kodaikanal Tour-------------------------------8D/7N</span>
+                                <span>Best of South India---------------------------------- 8D/7N</span>
+                            </p>
+                            <span class="label label-danger">Cost:Rs.20,000</span>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row go-marg">
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+
+                        <div class="panel-body">
+                            <h4 class="adjst">Goa Tour Packages</h4>
+                            <p>
+                                <span>Golden Triangle with Goa----------------------11D/10N</span>
+                                <span>Best of India Beaches--------------------------- 11D/10N</span>
+                                <span>The Goa Carnival---------------------------------- 7D/6N</span>
+                            </p>
+                            <span class="label label-danger">Cost:Rs.19,000</span>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+
+                        <div class="panel-body">
+                            <h4 class="adjst">Honeymoon Tour Packages </h4>
+                            <p>
+                                <span>Kashmir Honeymoon Tour-------------------------7D/6N</span>
+                                <span>Romance of Kerala-----------------------------------7D/6N</span>
+                                <span>Exotic Goa Beaches Tour---------------------------6D/5N</span>
+                            </p>
+                            <span class="label label-danger">Cost:Rs.45,000</span>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+
+                        <div class="panel-body">
+                            <h4 class="adjst"> Cultural India Tour</h4>
+                            <p>
+                                <span>Classical India Tour--------------------------------11D/10N</span>
+                                <span>Best of North India--------------------------------13D/12N</span>
+                                <span>Golden Triangle Tour------------------------------6D/5N</span>
+                            </p>
+                            <span class="label label-danger">Cost:Rs.15,000</span>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END PORTFOLIO SECTION-->
+
+
+    <!--FOOTER SECTION -->
+    <div id="footer">
+        www.Tournearby.com
+
+    </div>
+    <!-- END FOOTER SECTION -->
+
+  
+    <!-- BOOTSTRAP CORE SCRIPT   -->
+    <script src="{{ url_for('static', filename = 'assets/plugins/bootstrap.min.js') }}"></script>
+    
+
+</body>
+
+</html>

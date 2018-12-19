@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TourNearby Travel Agency </title>
+
+    <link href="{{ url_for('static', filename = 'assets/css/bootstrap.css') }}" rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename = 'assets/css/font-awesome.min.css') }}" rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename = 'assets/css/font-awesome-animation.css') }}" rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename = 'assets/css/prettyPhoto.css') }}" rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename = 'assets/css/style.css') }}" rel="stylesheet" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel='stylesheet' type='text/css'>
+
+</head>
+
+
+<body>
+    <!-- NAV SECTION -->
+       <div class="navbar navbar-inverse navbar-fixed-top">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ url_for('login') }}">TourNearby</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{ url_for('index') }}">HOME</a></li>
+                    <li><a href="{{ url_for('booking') }}">BOOKING</a></li>
+                    <li><a href="{{ url_for('packages') }}">PACKAGE</a></li>
+                    <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--END NAV SECTION -->
+
+
+
+    <!--Package SECTION-->
+    <section id="services-sec">
+        <div class="container">
+            <div class="row ">
+                <div class="text-center g-pad-bottom">
+                    <div class="col-md-4 col-sm-4 alert-info">
+                        <h4>&nbsp;Ticket Booking </h4>
+                        <p>
+                            TourNearby Agency provides all ticket booking services like train ,bus, flight tickets at very cheap costs.
+                        </p>
+
+                    </div>
+                    <div class="col-md-4 col-sm-4 alert-success">
+                        <h4>&nbsp;Darshan Booking </h4>
+                        <p>
+                            TourNearBy is a online portal for booking all temple darshans in India
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 alert-danger">
+                        <h4>&nbsp; Accomdation </h4>
+                        <p>
+                            TourNearby gives you a full selection of hotels to suit any budget in the most popular destinations in India
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row go-marg">
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+
+                        <div class="panel-body">
+                            <h4 class="adjst">Bus Ticket</h4>
+                            <p>
+                                Offers you best deals on online bus ticket booking for wide range of operators. Book Volvo, Luxury and sleeper bus tickets online.
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+
+                        <div class="panel-body">
+                            <h4 class="adjst">Train Ticket </h4>
+                            <p>
+                                Book your IRCTC Train Tickets online from TourNearby.Get confirmed IRCTC Train Tickets, PNR status,train information,seat availability .
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+
+                        <div class="panel-body">
+                            <h4 class="adjst">Flight Ticket </h4>
+                            <p>
+                                Book and Find flight tickets at lowest airfare at TourNearby. Get best discounts and deals on domestic flights booking around the world.
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row go-marg">
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+
+                        <div class="panel-body">
+                            <h4 class="adjst">Darshan Booking</h4>
+                            <p>
+                                Book your Darshan tickets at TourNearby Agency.We provides all Darshans of temples like Tirupathi,Palani,Shiridi,Sabarimala.
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+
+                        <div class="panel-body">
+                            <h4 class="adjst">Accomdation </h4>
+                            <p>
+                                TourNearby is a hotel search with an extensive price comparison. The prices shown come from numerous hotels and booking websites.
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+
+                        <div class="panel-body">
+                            <h4 class="adjst"> Tours & packages</h4>
+                            <p>
+                                Find best travel packages on TourNearby. Get latest travel itineraries from agents for your tour enquiry and book your perfect holiday on the go.
+
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END Package SECTION-->
+
+
+
+
+
+    <!--FOOTER SECTION -->
+    <div id="footer">
+        www.Tournearby.com
+
+    </div>
+    <!-- END FOOTER SECTION -->
+
+    
+    <!-- BOOTSTRAP CORE SCRIPT   -->
+    <script src="{{ url_for('static', filename = 'assets/plugins/bootstrap.min.js') }}"></script>
+    
+</body>
+
+</html>
