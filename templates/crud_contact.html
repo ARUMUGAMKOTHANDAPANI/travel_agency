@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -24,9 +24,9 @@
 
 </head>
 
+
 <body>
-    <!-- NAV SECTION -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
+     <div class="navbar navbar-inverse navbar-fixed-top">
 
         <div class="container">
             <div class="navbar-header">
@@ -51,26 +51,54 @@
     </div>
     <!--END NAV SECTION -->
 
-    <!--HOME SECTION-->
-    <div id="home-sec">
 
 
+    <!--CONTACT SECTION-->
+
+    <section>
         <div class="container">
-            <div class="row text-center">
-                <div class="col-md-12">
 
-                    <div class="travel">TourNearby</div>
-                    <div class=my_logo>
-                        <div class="head-main">It Leaves You Speechless
-                            <div class="head-main">THEN TURNS YOU INTO A STORYTELLER</div>
+            <div class="row g-pad-bottom">
+                <div class="col-md-6 ">
+                    <h2>TourNearby Travel Agency</h2>
+
+                    <p>
+                        <strong> Address: </strong> &nbsp;Chennai,Tamilnadu, Pin-600021.
+                        <br />
+                        <strong> Email Address: </strong> &nbsp;Tournearby@gmail.com
+                        <br />
+                        <strong> Phone Number: </strong> &nbsp;+91-9080453490
+                    </p>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 ">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" required="required" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" required="required" placeholder="Email address">
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="col-md-12 ">
+                                <div class="form-group">
+                                    <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-success">Submit Request</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
+
             </div>
         </div>
-    </div>
-
-    <!--END HOME SECTION-->
+    </section>
+    <!--END CONTACT SECTION-->
 
 
 
@@ -84,11 +112,9 @@
     <!-- END FOOTER SECTION -->
 
 
-  
     <!-- BOOTSTRAP CORE SCRIPT   -->
     <script src="{{ url_for('static', filename = 'assets/plugins/bootstrap.min.js') }}"></script>
-    
-    
+
 
 </body>
 
