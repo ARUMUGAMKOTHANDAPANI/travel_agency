@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>admin page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,21 +11,25 @@
 <body>
 
 <div class="container">
-  <h2>Hover Rows</h2>
-  <p>The .table-hover class enables a hover state on table rows:</p>
+  <h2>Tournearby</h2>
+   <div class="pull-right">
+        <ul class="nav navbar-nav">
+            <li><a href="{{url_for('login')}}"><button type="submit" class="btn navbar-btn btn-primary" name="logout" id="logout">Log Out</button></a></li>
+        </ul>
+</div>
   <table class="table table-hover">
     <thead>
       <tr>
           <th>S.No</th>
-        <th>Name</th>
+          <th>Name</th>
         <th>Email Address</th>
         <th>Message</th>
       </tr>
     </thead>
-      {%for item in result%}
+      {%for item in results%}
     <tbody>
       <tr>
-          <td>{{item['id']}}</td>
+          <td>{{item['sno']}}</td>
         <td>{{item['name']}}</td>
         <td>{{item['email']}}</td>
         <td>{{item['message']}}</td>

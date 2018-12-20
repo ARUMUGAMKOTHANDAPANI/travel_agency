@@ -1,6 +1,8 @@
-from flask import Flask , render_template , request,redirect,url_for
+from flask import Flask , render_template , request,redirect,url_for,session
 from flaskext.mysql import MySQL
+
 app = Flask ( __name__ , static_url_path='/static' )
+app.config['SECRET_KEY'] = 'super secret key'
 
 mysql = MySQL()
 app.config['MYSQL_DATABASE_USER'] = 'root'
@@ -15,13 +17,19 @@ db = mysql.connect ()
 cursor = db.cursor ()
 cursor.execute("SELECT * from user")
 data = cursor.fetchone()
-print(data)
 
 
 def data_to_dict(cursor):
     columns = cursor.description
     result = [{columns[position][0]: column for position,column in enumerate(value)} for value in cursor.fetchall()]
     return result
+
+
+def add_serial_no(data):
+    for item in data:
+        item['sno'] = data.index(item)+ 1
+        print(item['sno'])
+    return data
 
 
 @app.route ( '/' )
@@ -68,6 +76,7 @@ def login():
         username = data[1]
         password = data[2]
         if username == username_form and password == password_form:
+            session['username']=username_form
             return redirect(url_for('admin'))
         else:
             error = "INVALID CREDENTIALS"
@@ -76,10 +85,10 @@ def login():
 
 @app.route('/admin')
 def admin():
-    cursor.execute("SELECT * FROM agency")
-    result= data_to_dict(cursor)
-    print(result)
-    return render_template('admin.html',result = result)
+        cursor.execute("SELECT * FROM agency")
+        result= data_to_dict(cursor)
+        print(result)
+        return render_template('admin.html',results =add_serial_no(result))
 
 
 @app.route ('/delete/<id>')
@@ -90,6 +99,9 @@ def deleted(id):
        return redirect ( url_for ( 'admin' ) )
 
 
+@app.route('/logout')
+def logout():
+    return redirect(url_for('login'))
 
 if __name__ == '__main__':
     app.run ( debug=True )

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V2</title>
+	<title>Admin login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,8 +29,10 @@
 <!--===============================================================================================-->
 
 
+
 </head>
 <body>
+
 
 	<div class="limiter">
 		<div class="container-login100">
@@ -42,7 +44,7 @@
 					
 
 					<div class="wrap-input100" data-validate = "Enter Username">
-						<input class="input100" type="text" name="username">
+						<input class="input100" type="text"  name="username" required>
 						<span class="focus-input100" data-placeholder="Email"></span>
 					</div>
 
@@ -59,22 +61,22 @@
 							<div class="login100-form-bgbtn"></div>
 							<button class="login100-form-btn"><a href="{{url_for('login')}}"></a>
 								Login
-                            </div>
-							</button>
+                            </button>
+                        </div>
 
 						</div>
                         {%if error %}
                             <p class = error ><strong>Error:</strong>{{error}}</p>
                             {%endif%}
-					</div>
 				</form>
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
+
 
 
 	<div id="dropDownSelect1"></div>
- <script src="{{ url_for('static', filename = 'assets/plugins/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'assets/plugins/bootstrap.min.js') }}"></script>
 	
 <!--===============================================================================================-->
 	<script src="{{ url_for('static', filename = 'vendor/jquery/jquery-3.2.1.min.js') }}"></script>
@@ -92,6 +94,7 @@
 	<script src="{{ url_for('static', filename = 'vendor/countdowntime/countdowntime.js') }}"></script>
 <!--===============================================================================================-->
 	<script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+
 
 
 
